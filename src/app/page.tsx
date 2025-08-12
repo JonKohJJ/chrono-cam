@@ -1,6 +1,5 @@
 import SeriesTimeline from '@/components/SeriesTimeline'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { ThemeToggle } from '@/components/theme-toggle'
 
 export default function ProductTimeline() {
