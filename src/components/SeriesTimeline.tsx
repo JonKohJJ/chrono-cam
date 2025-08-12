@@ -332,7 +332,8 @@ export function SeriesCard({
 
 export function ModelCard({ summary, ergonomics }: CameraModel) {
     // Helper to safely show a value or "N/A"
-    const display = (value: any) => (value !== undefined && value !== null && value !== '' ? value : 'N/A')
+    const display = (value: string | number | boolean | null | undefined) =>
+        value !== undefined && value !== null && value !== '' ? value : 'N/A'
 
     // For dimensions, join with " x " but show N/A if any missing
     const displayDimensions = () => {
