@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chrono Cam – Camera Market Timeline & Model Explorer
+
+![GitHub last commit](https://img.shields.io/github/last-commit/JonKohJJ/chrono-cam)
+![GitHub repo size](https://img.shields.io/github/repo-size/JonKohJJ/chrono-cam)
+![License](https://img.shields.io/github/license/JonKohJJ/chrono-cam)
+
+A web platform that displays camera brands, series, and models in interactive timelines, helping buyers and enthusiasts explore the evolution of the camera market.
+
+---
+
+## Why Chrono Cam?
+
+Chrono Cam is built for **photography enthusiasts, collectors, and buyers** who want to:
+
+-   Understand the evolution of camera models over time.
+-   Compare brands and series at a glance.
+-   Make informed buying decisions or simply explore the market history.
+
+---
+
+## Features
+
+-   Interactive timelines for camera brands, series, and models.
+-   Track market trends and model evolution visually.
+-   Filter and explore cameras based on your interests.
+-   Clean, responsive interface built with modern web technologies.
+
+---
+
+## Tech Stack
+
+-   **Frontend:** Next.js, TypeScript, Tailwind CSS
+-   **Backend:** Python, FastAPI
+
+---
+
+## Demo
+
+![Demo Screenshot](https://via.placeholder.com/800x400?text=Chrono+Cam+Screenshot)  
+_Interactive timelines showcasing camera brands and models._
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+-   Node.js >= 18
+-   Python >= 3.11
+-   npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/JonKohJJ/chrono-cam.git
+cd chrono-cam
+
+# Install frontend dependencies
+cd frontend
+npm install
+
+# Install backend dependencies
+cd ../backend
+pip install -r requirements.txt
+
+# Run backend server
+uvicorn main:app --reload
+
+# Run frontend server (in a separate terminal)
+cd ../frontend
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Open your browser at http://localhost:3000
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contributions are welcome! Follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Fork the project
 
-## Learn More
+# Create your feature branch
+git checkout -b feature/NewFeature
 
-To learn more about Next.js, take a look at the following resources:
+# Commit your changes
+git commit -m 'Add new feature'
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Push to the branch
+git push origin feature/NewFeature
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Open a pull request
+```
