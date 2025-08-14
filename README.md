@@ -6,8 +6,6 @@
 
 A web platform that displays camera brands, series, and models in interactive timelines, helping buyers and enthusiasts explore the evolution of the camera market.
 
----
-
 ## Why Chrono Cam?
 
 Chrono Cam is built for **photography enthusiasts, collectors, and buyers** who want to:
@@ -16,8 +14,6 @@ Chrono Cam is built for **photography enthusiasts, collectors, and buyers** who 
 -   Compare brands and series at a glance.
 -   Make informed buying decisions or simply explore the market history.
 
----
-
 ## Features
 
 -   Interactive timelines for camera brands, series, and models.
@@ -25,21 +21,15 @@ Chrono Cam is built for **photography enthusiasts, collectors, and buyers** who 
 -   Filter and explore cameras based on your interests.
 -   Clean, responsive interface built with modern web technologies.
 
----
-
 ## Tech Stack
 
 -   **Frontend:** Next.js, TypeScript, Tailwind CSS
 -   **Backend:** Python, FastAPI
 
----
-
 ## Demo
 
 ![Demo Screenshot](https://via.placeholder.com/800x400?text=Chrono+Cam+Screenshot)  
 _Interactive timelines showcasing camera brands and models._
-
----
 
 ## Getting Started
 
@@ -92,28 +82,4 @@ git commit -m 'Add new feature'
 git push origin feature/NewFeature
 
 # Open a pull request
-```
-
-## License
-
-```text
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 ```
