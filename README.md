@@ -28,7 +28,7 @@ Chrono Cam is built for **photography enthusiasts, collectors, and buyers** who 
 
 ## Demo
 
-![Demo Screenshot](https://via.placeholder.com/800x400?text=Chrono+Cam+Screenshot)  
+![Demo Screenshot](./public/images/chronocam-demo.png)  
 _Interactive timelines showcasing camera brands and models._
 
 ## Getting Started
