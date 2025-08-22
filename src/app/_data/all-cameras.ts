@@ -677,47 +677,302 @@ export const SONY_CAMERAS: CameraDataset = {
 }
 
 export const FUJIFILM_CAMERAS: CameraDataset = {
-    'X-A': {
+    X100: {
         description:
-            'Entry-level APS-C mirrorless cameras, affordable and user-friendly, typically without an electronic viewfinder.',
-        short_description: 'Entry-Level',
+            'Premium compact cameras with APS-C sensors and a fixed 23mm f/2 lens. Known for their hybrid optical/electronic viewfinder, timeless rangefinder-style design, and high-quality build.',
+        short_description: 'Premium',
         discontinued: false,
-        targetAudience: 'Entry-Level',
-        imageUrl: 'https://example.com/fujifilm-x-a-series.jpg',
+        targetAudience: 'Enthusiast',
+        imageUrl: 'https://example.com/fujifilm-x100-series.jpg',
         models: [
             {
                 summary: {
-                    short_name: 'X-A7',
-                    full_name: 'Fujifilm X-A7',
-                    release_date: '2019-09-12',
-                    discontinued: false,
-                    image_url: 'https://example.com/fujifilm-x-a7.jpg',
+                    short_name: 'X100',
+                    full_name: 'Fujifilm X100',
+                    release_date: '2011-03-10',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x100.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1479785-REG/fujifilm_x_a7_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/682540-REG/Fujifilm_FinePix_X100_Digital_Camera.html',
                     ],
                 },
                 ergonomics: {
-                    weightGrams: 320,
-                    dimensionsMm: { width: 121.3, height: 83.4, depth: 49.0 },
-                    materialBuild: 'Polycarbonate',
+                    weightGrams: 440,
+                    dimensionsMm: { width: 126, height: 74, depth: 53 },
+                    materialBuild: 'Magnesium Alloy',
                     weatherSealed: false,
                 },
             },
             {
                 summary: {
-                    short_name: 'X-A5',
-                    full_name: 'Fujifilm X-A5',
-                    release_date: '2018-01-30',
+                    short_name: 'X100S',
+                    full_name: 'Fujifilm X100S',
+                    release_date: '2013-01-07',
                     discontinued: true,
-                    image_url: 'https://example.com/fujifilm-x-a5.jpg',
+                    image_url: 'https://example.com/fujifilm-x100s.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1351814-REG/fujifilm_x_a5_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/910178-REG/fujifilm_16240639_x100s_digital_camera.html',
                     ],
                 },
                 ergonomics: {
-                    weightGrams: 331,
-                    dimensionsMm: { width: 116.9, height: 66.5, depth: 41.4 },
-                    materialBuild: 'Polycarbonate',
+                    weightGrams: 445,
+                    dimensionsMm: { width: 126.5, height: 74.4, depth: 53.9 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X100T',
+                    full_name: 'Fujifilm X100T',
+                    release_date: '2014-09-10',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x100t.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1082159-REG/fujifilm_x100t_digital_camera_silver.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 440,
+                    dimensionsMm: { width: 126.5, height: 74.4, depth: 52.4 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X100F',
+                    full_name: 'Fujifilm X100F',
+                    release_date: '2017-01-19',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x100f.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1318272-REG/fujifilm_16534590_x100f_digital_camera_silver.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 469,
+                    dimensionsMm: { width: 126.5, height: 74.8, depth: 52.4 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X100V',
+                    full_name: 'Fujifilm X100V',
+                    release_date: '2020-02-04',
+                    discontinued: true, // discontinued in 2024 with X100VI release
+                    image_url: 'https://example.com/fujifilm-x100v.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1538606-REG/fujifilm_x100v_digital_camera_silver.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 478,
+                    dimensionsMm: { width: 128.0, height: 74.8, depth: 53.3 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true, // requires filter for full sealing
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X100VI',
+                    full_name: 'Fujifilm X100VI',
+                    release_date: '2024-02-20',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-x100vi.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1830765-REG/fujifilm_x100vi_digital_camera_silver.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 521,
+                    dimensionsMm: { width: 128.0, height: 74.8, depth: 55.3 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true, // requires filter for full sealing
+                },
+            },
+        ],
+    },
+
+    X10: {
+        description:
+            'High-end compact digital cameras with manual controls, retro design, and larger-than-average sensors (2/3-inch or APS-C for X70). Part of Fujifilm\'s "X" enthusiast line before the mirrorless era.',
+        short_description: 'Compact',
+        discontinued: true,
+        targetAudience: 'Enthusiast',
+        imageUrl: 'https://example.com/fujifilm-x10-series.jpg',
+        models: [
+            {
+                summary: {
+                    short_name: 'X10',
+                    full_name: 'Fujifilm X10',
+                    release_date: '2011-09-01',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x10.jpg',
+                    purchase_links: ['https://www.bhphotovideo.com/c/product/???'],
+                },
+                ergonomics: {
+                    weightGrams: 350,
+                    dimensionsMm: { width: 117, height: 70, depth: 57 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X20',
+                    full_name: 'Fujifilm X20',
+                    release_date: '2013-01-07',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x20.jpg',
+                    purchase_links: ['https://www.bhphotovideo.com/c/product/???'],
+                },
+                ergonomics: {
+                    weightGrams: 353,
+                    dimensionsMm: { width: 117, height: 70, depth: 57 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X30',
+                    full_name: 'Fujifilm X30',
+                    release_date: '2014-08-26',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x30.jpg',
+                    purchase_links: ['https://www.bhphotovideo.com/c/product/???'],
+                },
+                ergonomics: {
+                    weightGrams: 423,
+                    dimensionsMm: { width: 119, height: 72, depth: 60 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X70',
+                    full_name: 'Fujifilm X70',
+                    release_date: '2016-01-15', // announced January 2016
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x70.jpg',
+                    purchase_links: ['https://www.bhphotovideo.com/c/product/???'],
+                },
+                ergonomics: {
+                    weightGrams: 340,
+                    dimensionsMm: { width: 112.5, height: 64.4, depth: 44.4 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+        ],
+    },
+
+    'X-Pro': {
+        description:
+            'Flagship rangefinder-style mirrorless cameras with hybrid viewfinders, exceptional image quality, and professional-grade features.',
+        short_description: 'Professional',
+        discontinued: false,
+        targetAudience: 'Professional',
+        imageUrl: 'https://example.com/fujifilm-x-pro-series.jpg',
+        models: [
+            {
+                summary: {
+                    short_name: 'X-Pro1',
+                    full_name: 'Fujifilm X-Pro1',
+                    release_date: '2012-03-29',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-pro1.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/798930-REG/Fujifilm_X_Pro1_Mirrorless_Digital.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 450,
+                    dimensionsMm: { width: 139, height: 81, depth: 42 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-Pro2',
+                    full_name: 'Fujifilm X-Pro2',
+                    release_date: '2016-01-07',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-pro2.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1224353-REG/fujifilm_x_pro2_mirrorless_digital.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 495,
+                    dimensionsMm: { width: 139, height: 82, depth: 46 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-Pro3',
+                    full_name: 'Fujifilm X-Pro3',
+                    release_date: '2019-11-23',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-x-pro3.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1482881-REG/fujifilm_x_pro3_mirrorless_digital.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 497,
+                    dimensionsMm: { width: 140, height: 83, depth: 46 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true,
+                },
+            },
+        ],
+    },
+
+    XF: {
+        description:
+            'Premium fixed-lens compacts in Fujifilm’s “X” line, offering larger-than-average sensors, manual controls, and sophisticated image quality in a stylish, pocketable body.',
+        short_description: 'Stylish',
+        discontinued: true,
+        targetAudience: 'Enthusiast',
+        imageUrl: 'https://example.com/fujifilm-xf-compact-series.jpg',
+        models: [
+            {
+                summary: {
+                    short_name: 'XF1',
+                    full_name: 'Fujifilm XF1',
+                    release_date: '2012-09-17',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-xf1.jpg',
+                    purchase_links: ['https://www.bhphotovideo.com/c/product/???'],
+                },
+                ergonomics: {
+                    weightGrams: 255,
+                    dimensionsMm: { width: 108, height: 62, depth: 33 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'XF10',
+                    full_name: 'Fujifilm XF10',
+                    release_date: '2018-07-19',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-xf10.jpg',
+                    purchase_links: ['https://www.bhphotovideo.com/c/product/???'],
+                },
+                ergonomics: {
+                    weightGrams: 279,
+                    dimensionsMm: { width: 113, height: 64, depth: 41 },
+                    materialBuild: 'Magnesium Alloy',
                     weatherSealed: false,
                 },
             },
@@ -726,26 +981,62 @@ export const FUJIFILM_CAMERAS: CameraDataset = {
 
     'X-E': {
         description:
-            'Rangefinder-style APS-C mirrorless cameras with electronic viewfinders, designed for enthusiasts.',
-        short_description: 'Rangefinder-Style',
+            'Compact, rangefinder-style mirrorless cameras with APS-C sensors, manual controls, and retro aesthetics.',
+        short_description: 'Rangefinder',
         discontinued: false,
         targetAudience: 'Enthusiast',
         imageUrl: 'https://example.com/fujifilm-x-e-series.jpg',
         models: [
             {
                 summary: {
-                    short_name: 'X-E4',
-                    full_name: 'Fujifilm X-E4',
-                    release_date: '2021-01-27',
-                    discontinued: false,
-                    image_url: 'https://example.com/fujifilm-x-e4.jpg',
+                    short_name: 'X-E1',
+                    full_name: 'Fujifilm X-E1',
+                    release_date: '2012-09-06',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-e1.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1625519-REG/fujifilm_x_e4_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
                     ],
                 },
                 ergonomics: {
-                    weightGrams: 364,
-                    dimensionsMm: { width: 121.3, height: 72.9, depth: 32.7 },
+                    weightGrams: 350,
+                    dimensionsMm: { width: 137.5, height: 82.8, depth: 41.8 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-E2',
+                    full_name: 'Fujifilm X-E2',
+                    release_date: '2013-10-15',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-e2.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 350,
+                    dimensionsMm: { width: 129, height: 75, depth: 37 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-E2S',
+                    full_name: 'Fujifilm X-E2S',
+                    release_date: '2016-02-15',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-e2s.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 350,
+                    dimensionsMm: { width: 129, height: 75, depth: 37 },
                     materialBuild: 'Magnesium Alloy',
                     weatherSealed: false,
                 },
@@ -758,12 +1049,48 @@ export const FUJIFILM_CAMERAS: CameraDataset = {
                     discontinued: true,
                     image_url: 'https://example.com/fujifilm-x-e3.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1326119-REG/fujifilm_x_e3_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
                     ],
                 },
                 ergonomics: {
                     weightGrams: 337,
-                    dimensionsMm: { width: 121.3, height: 73.9, depth: 42.7 },
+                    dimensionsMm: { width: 121.3, height: 73.9, depth: 32.7 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-E4',
+                    full_name: 'Fujifilm X-E4',
+                    release_date: '2021-03-04',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-e4.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 364,
+                    dimensionsMm: { width: 121.3, height: 73.9, depth: 32.7 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-E5',
+                    full_name: 'Fujifilm X-E5',
+                    release_date: '2025-08-01',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-x-e5.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1900553-REG/fujifilm_16949961_x_e5_mirrorless_camera_with.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 445,
+                    dimensionsMm: { width: 131.5, height: 78.5, depth: 39.5 },
                     materialBuild: 'Magnesium Alloy',
                     weatherSealed: false,
                 },
@@ -772,9 +1099,10 @@ export const FUJIFILM_CAMERAS: CameraDataset = {
     },
 
     'X-M': {
-        description: 'Simple, entry-level APS-C mirrorless cameras with basic features and compact design.',
-        short_description: 'Mirco ',
-        discontinued: true,
+        description:
+            'Compact and lightweight mirrorless cameras designed for entry-level users seeking high-quality imaging capabilities.',
+        short_description: 'Entry-Level',
+        discontinued: false,
         targetAudience: 'Entry-Level',
         imageUrl: 'https://example.com/fujifilm-x-m-series.jpg',
         models: [
@@ -782,45 +1110,265 @@ export const FUJIFILM_CAMERAS: CameraDataset = {
                 summary: {
                     short_name: 'X-M1',
                     full_name: 'Fujifilm X-M1',
-                    release_date: '2013-06-18',
+                    release_date: '2013-06-25',
                     discontinued: true,
                     image_url: 'https://example.com/fujifilm-x-m1.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1044892-REG/fujifilm_x_m1_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
                     ],
                 },
                 ergonomics: {
                     weightGrams: 330,
-                    dimensionsMm: { width: 117.3, height: 66.9, depth: 39.0 },
-                    materialBuild: 'Polycarbonate',
+                    dimensionsMm: { width: 116, height: 66, depth: 40 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-M5',
+                    full_name: 'Fujifilm X-M5',
+                    release_date: '2024-11-01',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-x-m5.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1855424-REG/fujifilm_16900707_x_m5_mirrorless_camera_silver.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 355,
+                    dimensionsMm: { width: 125, height: 74, depth: 43 },
+                    materialBuild: 'Magnesium Alloy',
                     weatherSealed: false,
                 },
             },
         ],
     },
 
-    'X-T': {
+    'X-A': {
         description:
-            'Flagship APS-C mirrorless cameras with DSLR-style handling, designed for enthusiasts and professionals.',
+            'Entry-level mirrorless cameras in Fujifilm’s “X” line, featuring APS-C sensors, compact bodies, and user-friendly interfaces.',
+        short_description: 'Entry-Level',
+        discontinued: true,
+        targetAudience: 'Entry-Level',
+        imageUrl: 'https://example.com/fujifilm-x-a-series.jpg',
+        models: [
+            {
+                summary: {
+                    short_name: 'X-A1',
+                    full_name: 'Fujifilm X-A1',
+                    release_date: '2013-09-17',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-a1.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 330,
+                    dimensionsMm: { width: 116, height: 66, depth: 40 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-A2',
+                    full_name: 'Fujifilm X-A2',
+                    release_date: '2015-01-15',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-a2.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 335,
+                    dimensionsMm: { width: 116, height: 66, depth: 40 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-A3',
+                    full_name: 'Fujifilm X-A3',
+                    release_date: '2016-08-25',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-a3.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 339,
+                    dimensionsMm: { width: 116.9, height: 66.5, depth: 40.4 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-A10',
+                    full_name: 'Fujifilm X-A10',
+                    release_date: '2016-12-01',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-a10.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 331,
+                    dimensionsMm: { width: 116.9, height: 66.5, depth: 40.4 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-A5',
+                    full_name: 'Fujifilm X-A5',
+                    release_date: '2018-01-31',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-a5.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 455,
+                    dimensionsMm: { width: 116.9, height: 67.7, depth: 40.4 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-A7',
+                    full_name: 'Fujifilm X-A7',
+                    release_date: '2019-09-12',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-a7.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 320,
+                    dimensionsMm: { width: 119, height: 68, depth: 41 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
+                },
+            },
+        ],
+    },
+
+    XQ: {
+        description:
+            'Premium ultracompact fixed-lens cameras in Fujifilm’s “X” line, offering X-Trans sensors, manual controls, and excellent image quality in a pocketable form factor.',
+        short_description: 'Ultracompact',
+        discontinued: true,
+        targetAudience: 'Enthusiast',
+        imageUrl: 'https://example.com/fujifilm-xq-series.jpg',
+        models: [
+            {
+                summary: {
+                    short_name: 'XQ1',
+                    full_name: 'Fujifilm XQ1',
+                    release_date: '2013-10-18',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-xq1.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 206,
+                    dimensionsMm: { width: 100, height: 58, depth: 34 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'XQ2',
+                    full_name: 'Fujifilm XQ2',
+                    release_date: '2015-01-15',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-xq2.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1112821-REG/fujifilm_x_q2_digital_camera_silver.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 206,
+                    dimensionsMm: { width: 100, height: 58, depth: 34 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: false,
+                },
+            },
+        ],
+    },
+
+    'X-Tx': {
+        description:
+            'Flagship mirrorless cameras in Fujifilm’s X series, offering advanced features and performance for professional photographers.',
         short_description: 'Flagship',
         discontinued: false,
-        targetAudience: 'Enthusiast',
-        imageUrl: 'https://example.com/fujifilm-x-t-series.jpg',
+        targetAudience: 'Professional',
+        imageUrl: 'https://example.com/fujifilm-x-tx-series.jpg',
         models: [
+            {
+                summary: {
+                    short_name: 'X-T1',
+                    full_name: 'Fujifilm X-T1',
+                    release_date: '2014-01-28',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-t1.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 440,
+                    dimensionsMm: { width: 129, height: 93, depth: 52 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-T2',
+                    full_name: 'Fujifilm X-T2',
+                    release_date: '2016-07-07',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-t2.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 507,
+                    dimensionsMm: { width: 132, height: 91, depth: 49 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true,
+                },
+            },
             {
                 summary: {
                     short_name: 'X-T3',
                     full_name: 'Fujifilm X-T3',
                     release_date: '2018-09-06',
-                    discontinued: false,
+                    discontinued: true,
                     image_url: 'https://example.com/fujifilm-x-t3.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1414625-REG/fujifilm_x_t3_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
                     ],
                 },
                 ergonomics: {
                     weightGrams: 539,
-                    dimensionsMm: { width: 134.6, height: 92.8, depth: 63.8 },
+                    dimensionsMm: { width: 132, height: 92, depth: 58 },
                     materialBuild: 'Magnesium Alloy',
                     weatherSealed: true,
                 },
@@ -829,16 +1377,34 @@ export const FUJIFILM_CAMERAS: CameraDataset = {
                 summary: {
                     short_name: 'X-T4',
                     full_name: 'Fujifilm X-T4',
-                    release_date: '2020-02-26',
+                    release_date: '2020-02-25',
                     discontinued: false,
                     image_url: 'https://example.com/fujifilm-x-t4.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1564233-REG/fujifilm_x_t4_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
                     ],
                 },
                 ergonomics: {
                     weightGrams: 607,
-                    dimensionsMm: { width: 134.6, height: 92.8, depth: 63.8 },
+                    dimensionsMm: { width: 134, height: 92, depth: 63 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-T5',
+                    full_name: 'Fujifilm X-T5',
+                    release_date: '2022-11-25',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-x-t5.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 557,
+                    dimensionsMm: { width: 134, height: 92, depth: 65 },
                     materialBuild: 'Magnesium Alloy',
                     weatherSealed: true,
                 },
@@ -846,28 +1412,29 @@ export const FUJIFILM_CAMERAS: CameraDataset = {
         ],
     },
 
-    'X-T10': {
-        description: 'Mid-tier budget APS-C mirrorless cameras, offering many flagship features at a lower price.',
-        short_description: 'Mid-Tier',
+    'X-Txx': {
+        description:
+            'Mid-range mirrorless cameras offering a balance between performance and portability, suitable for enthusiasts and advanced users.',
+        short_description: 'Mid-Range',
         discontinued: false,
         targetAudience: 'Enthusiast',
-        imageUrl: 'https://example.com/fujifilm-x-t10-series.jpg',
+        imageUrl: 'https://example.com/fujifilm-x-txx-series.jpg',
         models: [
             {
                 summary: {
-                    short_name: 'X-T30',
-                    full_name: 'Fujifilm X-T30',
-                    release_date: '2019-02-14',
-                    discontinued: false,
-                    image_url: 'https://example.com/fujifilm-x-t30.jpg',
+                    short_name: 'X-T10',
+                    full_name: 'Fujifilm X-T10',
+                    release_date: '2015-05-18',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-t10.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1403714-REG/fujifilm_x_t30_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
                     ],
                 },
                 ergonomics: {
-                    weightGrams: 383,
-                    dimensionsMm: { width: 118.4, height: 82.8, depth: 46.8 },
-                    materialBuild: 'Magnesium Alloy + Polycarbonate',
+                    weightGrams: 381,
+                    dimensionsMm: { width: 118, height: 83, depth: 41 },
+                    materialBuild: 'Plastic',
                     weatherSealed: false,
                 },
             },
@@ -879,59 +1446,203 @@ export const FUJIFILM_CAMERAS: CameraDataset = {
                     discontinued: true,
                     image_url: 'https://example.com/fujifilm-x-t20.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1304873-REG/fujifilm_x_t20_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
                     ],
                 },
                 ergonomics: {
                     weightGrams: 383,
-                    dimensionsMm: { width: 117.3, height: 82.8, depth: 41.4 },
-                    materialBuild: 'Magnesium Alloy + Polycarbonate',
+                    dimensionsMm: { width: 118, height: 83, depth: 41 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-T30',
+                    full_name: 'Fujifilm X-T30',
+                    release_date: '2019-02-14',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-t30.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 383,
+                    dimensionsMm: { width: 118, height: 83, depth: 41 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-T30 II',
+                    full_name: 'Fujifilm X-T30 II',
+                    release_date: '2021-10-01',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-x-t30-ii.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1638580-REG/fujifilm_x_t30_ii_mirrorless_digital.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 383,
+                    dimensionsMm: { width: 118, height: 83, depth: 41 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-T50',
+                    full_name: 'Fujifilm X-T50',
+                    release_date: '2024-04-01',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-x-t50.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 455,
+                    dimensionsMm: { width: 119, height: 83, depth: 43 },
+                    materialBuild: 'Plastic',
                     weatherSealed: false,
                 },
             },
         ],
     },
 
-    'X-Pro': {
+    GFX: {
         description:
-            'Hybrid optical/electronic viewfinder APS-C mirrorless cameras with a rangefinder style, targeting advanced users and professionals.',
-        short_description: 'Rangefinder-Style Pro',
+            'Fujifilm’s medium format mirrorless cameras, offering exceptional image quality, larger sensors, and professional-grade features for photographers and cinematographers.',
+        short_description: 'Medium Format',
         discontinued: false,
         targetAudience: 'Professional',
-        imageUrl: 'https://example.com/fujifilm-x-pro-series.jpg',
+        imageUrl: 'https://example.com/fujifilm-gfx-series.jpg',
         models: [
             {
                 summary: {
-                    short_name: 'X-Pro3',
-                    full_name: 'Fujifilm X-Pro3',
-                    release_date: '2019-11-23',
-                    discontinued: false,
-                    image_url: 'https://example.com/fujifilm-x-pro3.jpg',
+                    short_name: 'GFX 50S',
+                    full_name: 'Fujifilm GFX 50S',
+                    release_date: '2017-01-31',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-gfx-50s.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1532288-REG/fujifilm_x_pro3_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1296483-REG/fujifilm_gfx_50s_mirrorless_medium.html',
                     ],
                 },
                 ergonomics: {
-                    weightGrams: 497,
-                    dimensionsMm: { width: 140.5, height: 82.8, depth: 46.1 },
+                    weightGrams: 920,
+                    dimensionsMm: { width: 156, height: 163.6, depth: 102.9 },
                     materialBuild: 'Magnesium Alloy',
                     weatherSealed: true,
                 },
             },
             {
                 summary: {
-                    short_name: 'X-Pro2',
-                    full_name: 'Fujifilm X-Pro2',
-                    release_date: '2016-01-07',
+                    short_name: 'GFX 50R',
+                    full_name: 'Fujifilm GFX 50R',
+                    release_date: '2018-10-25',
                     discontinued: true,
-                    image_url: 'https://example.com/fujifilm-x-pro2.jpg',
+                    image_url: 'https://example.com/fujifilm-gfx-50r.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1324979-REG/fujifilm_x_pro2_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1430858-REG/fujifilm_gfx_50r_mirrorless_medium.html',
                     ],
                 },
                 ergonomics: {
-                    weightGrams: 495,
-                    dimensionsMm: { width: 140.5, height: 82.8, depth: 46.1 },
+                    weightGrams: 775,
+                    dimensionsMm: { width: 156.2, height: 163.6, depth: 82.9 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'GFX 100',
+                    full_name: 'Fujifilm GFX 100',
+                    release_date: '2019-06-27',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-gfx-100.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1461411-REG/fujifilm_gfx_100_mirrorless_medium.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 1400,
+                    dimensionsMm: { width: 156.2, height: 163.6, depth: 102.9 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'GFX 100S',
+                    full_name: 'Fujifilm GFX 100S',
+                    release_date: '2021-01-27',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-gfx-100s.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1585547-REG/fujifilm_gfx_100s_mirrorless_medium.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 900,
+                    dimensionsMm: { width: 156, height: 163.6, depth: 102.9 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'GFX 50S II',
+                    full_name: 'Fujifilm GFX 50S II',
+                    release_date: '2021-09-02',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-gfx-50s-ii.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1662700-REG/fujifilm_gfx_50s_ii_mirrorless_medium.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 900,
+                    dimensionsMm: { width: 156, height: 163.6, depth: 102.9 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'GFX 100 II',
+                    full_name: 'Fujifilm GFX 100 II',
+                    release_date: '2023-09-15',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-gfx-100-ii.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1761001-REG/fujifilm_gfx_100_ii_mirrorless_medium.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 1400,
+                    dimensionsMm: { width: 156, height: 163.6, depth: 102.9 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'GFX 100RF',
+                    full_name: 'Fujifilm GFX 100RF',
+                    release_date: '2025-03-01',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-gfx-100rf.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1901001-REG/fujifilm_gfx_100rf_mirrorless_medium.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 1400,
+                    dimensionsMm: { width: 156, height: 163.6, depth: 102.9 },
                     materialBuild: 'Magnesium Alloy',
                     weatherSealed: true,
                 },
@@ -941,8 +1652,8 @@ export const FUJIFILM_CAMERAS: CameraDataset = {
 
     'X-H': {
         description:
-            'High-end APS-C mirrorless cameras with rugged build quality and advanced features, designed for professionals.',
-        short_description: 'Video',
+            'High-end professional mirrorless cameras with robust build quality, in-body image stabilization, and advanced video and photography capabilities.',
+        short_description: 'Professional',
         discontinued: false,
         targetAudience: 'Professional',
         imageUrl: 'https://example.com/fujifilm-x-h-series.jpg',
@@ -951,16 +1662,34 @@ export const FUJIFILM_CAMERAS: CameraDataset = {
                 summary: {
                     short_name: 'X-H1',
                     full_name: 'Fujifilm X-H1',
-                    release_date: '2018-02-27',
+                    release_date: '2018-02-15',
                     discontinued: true,
                     image_url: 'https://example.com/fujifilm-x-h1.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1398326-REG/fujifilm_x_h1_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1332463-REG/fujifilm_x_h1_mirrorless_digital.html',
                     ],
                 },
                 ergonomics: {
                     weightGrams: 673,
-                    dimensionsMm: { width: 139.8, height: 97.3, depth: 85.5 },
+                    dimensionsMm: { width: 139, height: 97, depth: 85 },
+                    materialBuild: 'Magnesium Alloy',
+                    weatherSealed: true,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-H2',
+                    full_name: 'Fujifilm X-H2',
+                    release_date: '2022-09-09',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-x-h2.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1675573-REG/fujifilm_x_h2_mirrorless_digital.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 660,
+                    dimensionsMm: { width: 138, height: 97, depth: 85 },
                     materialBuild: 'Magnesium Alloy',
                     weatherSealed: true,
                 },
@@ -973,12 +1702,12 @@ export const FUJIFILM_CAMERAS: CameraDataset = {
                     discontinued: false,
                     image_url: 'https://example.com/fujifilm-x-h2s.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1731344-REG/fujifilm_x_h2s_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1665806-REG/fujifilm_x_h2s_mirrorless_digital.html',
                     ],
                 },
                 ergonomics: {
                     weightGrams: 660,
-                    dimensionsMm: { width: 138.5, height: 97.3, depth: 84.6 },
+                    dimensionsMm: { width: 138, height: 97, depth: 85 },
                     materialBuild: 'Magnesium Alloy',
                     weatherSealed: true,
                 },
@@ -986,48 +1715,95 @@ export const FUJIFILM_CAMERAS: CameraDataset = {
         ],
     },
 
-    GFX: {
+    'X-Txxx': {
         description:
-            'Medium format mirrorless cameras with large sensors for ultra-high resolution and image quality, aimed at professionals.',
-        short_description: 'Medium Format',
-        discontinued: false,
-        targetAudience: 'Professional',
-        imageUrl: 'https://example.com/fujifilm-gfx-series.jpg',
+            'Entry-level mirrorless cameras offering simplicity and ease of use, ideal for beginners venturing into photography.',
+        short_description: 'Entry-Level',
+        discontinued: true,
+        targetAudience: 'Entry-Level',
+        imageUrl: 'https://example.com/fujifilm-x-txxx-series.jpg',
         models: [
             {
                 summary: {
-                    short_name: 'GFX 50S II',
-                    full_name: 'Fujifilm GFX 50S II',
-                    release_date: '2021-09-02',
-                    discontinued: false,
-                    image_url: 'https://example.com/fujifilm-gfx-50s-ii.jpg',
+                    short_name: 'X-T100',
+                    full_name: 'Fujifilm X-T100',
+                    release_date: '2018-05-24',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-t100.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1650296-REG/fujifilm_gfx_50s_ii_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
                     ],
                 },
                 ergonomics: {
-                    weightGrams: 900,
-                    dimensionsMm: { width: 150, height: 104.2, depth: 87.2 },
-                    materialBuild: 'Magnesium Alloy',
-                    weatherSealed: true,
+                    weightGrams: 448,
+                    dimensionsMm: { width: 118, height: 83, depth: 41 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
                 },
             },
             {
                 summary: {
-                    short_name: 'GFX 100S',
-                    full_name: 'Fujifilm GFX 100S',
-                    release_date: '2021-02-25',
-                    discontinued: false,
-                    image_url: 'https://example.com/fujifilm-gfx-100s.jpg',
+                    short_name: 'X-T200',
+                    full_name: 'Fujifilm X-T200',
+                    release_date: '2020-01-23',
+                    discontinued: true,
+                    image_url: 'https://example.com/fujifilm-x-t200.jpg',
                     purchase_links: [
-                        'https://www.bhphotovideo.com/c/product/1608860-REG/fujifilm_gfx_100s_mirrorless_digital.html',
+                        'https://www.bhphotovideo.com/c/product/1007601-REG/fujifilm_16410609_xq1_digital_camera_black.html',
                     ],
                 },
                 ergonomics: {
-                    weightGrams: 900,
-                    dimensionsMm: { width: 150, height: 104.2, depth: 87.2 },
-                    materialBuild: 'Magnesium Alloy',
-                    weatherSealed: true,
+                    weightGrams: 370,
+                    dimensionsMm: { width: 118, height: 83, depth: 41 },
+                    materialBuild: 'Plastic',
+                    weatherSealed: false,
+                },
+            },
+        ],
+    },
+
+    'X-S': {
+        description:
+            'Versatile, enthusiast-friendly mirrorless cameras with in-body image stabilization and a balance of performance and usability.',
+        short_description: 'Enthusiast',
+        discontinued: false,
+        targetAudience: 'Enthusiast',
+        imageUrl: 'https://example.com/fujifilm-x-s-series.jpg',
+        models: [
+            {
+                summary: {
+                    short_name: 'X-S10',
+                    full_name: 'Fujifilm X-S10',
+                    release_date: '2020-10-15',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-x-s10.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1585552-REG/fujifilm_x_s10_mirrorless_digital.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 465,
+                    dimensionsMm: { width: 126, height: 85, depth: 65 },
+                    materialBuild: 'Magnesium Alloy + Plastic',
+                    weatherSealed: false,
+                },
+            },
+            {
+                summary: {
+                    short_name: 'X-S20',
+                    full_name: 'Fujifilm X-S20',
+                    release_date: '2023-07-27',
+                    discontinued: false,
+                    image_url: 'https://example.com/fujifilm-x-s20.jpg',
+                    purchase_links: [
+                        'https://www.bhphotovideo.com/c/product/1762222-REG/fujifilm_x_s20_mirrorless_digital.html',
+                    ],
+                },
+                ergonomics: {
+                    weightGrams: 470,
+                    dimensionsMm: { width: 126, height: 85, depth: 66 },
+                    materialBuild: 'Magnesium Alloy + Plastic',
+                    weatherSealed: false,
                 },
             },
         ],

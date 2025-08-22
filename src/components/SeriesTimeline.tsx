@@ -220,7 +220,11 @@ export default function SeriesTimeline() {
                                         <Badge variant='secondary'>{series.models.length}</Badge>
                                         <h3 className='font-semibold text-lg'>{seriesName}</h3>
                                     </div>
-                                    <Badge variant='default'>{series.short_description}</Badge>
+                                    {series.discontinued ? (
+                                        <Badge variant='destructive'>Discontinued</Badge>
+                                    ) : (
+                                        <Badge variant='default'>{series.short_description}</Badge>
+                                    )}
                                 </DialogTrigger>
 
                                 <DialogContent className='border-none'>
