@@ -17,7 +17,7 @@ export default function ProductTimeline() {
                     <div className='flex items-center space-x-1'>
                         <TabsList>
                             <TabsTrigger value='timeline'>Timeline</TabsTrigger>
-                            {/* <TabsTrigger value='compare'>Compare</TabsTrigger> */}
+                            <TabsTrigger value='compare' disabled={true} >Compare</TabsTrigger>
                         </TabsList>
                         <ThemeToggle />
                     </div>

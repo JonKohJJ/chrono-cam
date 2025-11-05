@@ -1,7 +1,6 @@
 'use client'
 
 import { useRef, useState } from 'react'
-import { SONY_CAMERAS, CameraDataset, CameraSeries, CameraModel, FUJIFILM_CAMERAS } from '@/app/_data/all-cameras'
 import { Check, ChevronsUpDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -11,11 +10,14 @@ import { Badge } from '@/components/ui/badge'
 import { Command, CommandEmpty, CommandGroup, CommandItem, CommandList } from '@/components/ui/command'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Card } from './ui/card'
+import { Card, CardContent } from './ui/card'
+import Image from 'next/image'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './ui/carousel'
+import { SONY_CAMERAS } from '@/app/_data/sony/sony'
+import { CameraDataset, CameraModel, CameraSeries } from '@/app/_data/types'
 
 const DATASETS: Record<string, CameraDataset> = {
     Sony: SONY_CAMERAS,
-    Fujifilm: FUJIFILM_CAMERAS,
 }
 
 const BRANDS = Object.keys(DATASETS)
@@ -220,11 +222,11 @@ export default function SeriesTimeline() {
                                         <Badge variant='secondary'>{series.models.length}</Badge>
                                         <h3 className='font-semibold text-lg'>{seriesName}</h3>
                                     </div>
-                                    {series.discontinued ? (
-                                        <Badge variant='destructive'>Discontinued</Badge>
-                                    ) : (
-                                        <Badge variant='default'>{series.short_description}</Badge>
-                                    )}
+                                    <div className='flex flex-col gap-2 justify-end'>
+                                        <Badge variant={series.discontinued ? 'destructive' : 'default'}>
+                                            {series.short_description}
+                                        </Badge>
+                                    </div>
                                 </DialogTrigger>
 
                                 <DialogContent className='border-none'>
@@ -314,7 +316,7 @@ export function SeriesCard({
     models,
     description,
     discontinued,
-    targetAudience,
+    // targetAudience,
 }: { name: string } & CameraSeries) {
     return (
         <div className='space-y-4'>
@@ -324,43 +326,77 @@ export function SeriesCard({
                     {discontinued ? 'Discontinued' : 'Active'}
                 </Badge>
                 <Badge variant='secondary'>{models.length} Models</Badge>
+                {/* <Badge variant='secondary'>{targetAudience}</Badge> */}
             </DialogTitle>
 
+            {/* Image carousel here */}
+            <Carousel>
+                <CarouselContent>
+                    {models.map((model, index) => (
+                        <CarouselItem key={index}>
+                            <Card className='border-none shadow-none !p-0'>
+                                <CardContent className='p-6'>
+                                    <div className='placeholder-image w-full bg-white aspect-[3/2]'>
+                                        <Image
+                                            className='!relative p-4'
+                                            src={model.summary.image_url || '/images/placeholder-image.png'}
+                                            layout='fill'
+                                            objectFit='cover'
+                                            alt={model.summary.short_name}
+                                        />
+                                    </div>
+                                    <p className='w-full text-center text-xs mt-2'>{model.summary.full_name}</p>
+                                </CardContent>
+                            </Card>
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
+                <CarouselPrevious className='cursor-pointer left-0 size-6' />
+                <CarouselNext className='cursor-pointer right-0 size-6' />
+            </Carousel>
+
             <DialogDescription>{description}</DialogDescription>
-            <p>
-                Audience: <strong>{targetAudience}</strong>
-            </p>
         </div>
     )
 }
 
-export function ModelCard({ summary, ergonomics }: CameraModel) {
+export function ModelCard({ summary }: CameraModel) {
+
+    // export function ModelCard({ summary, ergonomics }: CameraModel) {
     // Helper to safely show a value or "N/A"
     const display = (value: string | number | boolean | null | undefined) =>
         value !== undefined && value !== null && value !== '' ? value : 'N/A'
 
     // For dimensions, join with " x " but show N/A if any missing
-    const displayDimensions = () => {
-        if (!ergonomics?.dimensionsMm) return 'N/A'
-        const { width, height, depth } = ergonomics.dimensionsMm
-        return [width, height, depth].map((v) => (v !== undefined && v !== null ? v : 'N/A')).join(' x ') + ' mm'
-    }
+    // const displayDimensions = () => {
+    //     if (!ergonomics?.dimensionsMm) return 'N/A'
+    //     const { width, height, depth } = ergonomics.dimensionsMm
+    //     return [width, height, depth].map((v) => (v !== undefined && v !== null ? v : 'N/A')).join(' x ') + ' mm'
+    // }
 
     return (
         <div className='space-y-4 text-sm'>
             <DialogTitle className='flex gap-4 items-center text-xl font-bold'>
-                <p>Model: {display(summary.short_name)}</p>
+                <p>{display(summary.short_name)}</p>
                 <Badge variant={summary.discontinued ? 'destructive' : 'active'}>
                     {summary.discontinued ? 'Discontinued' : 'Active'}
                 </Badge>
             </DialogTitle>
 
-            <div className='placeholder-image w-full bg-blue-200 aspect-[16/9]'></div>
+            <div className='placeholder-image w-full bg-white aspect-[3/2]'>
+                <Image
+                    className='!relative'
+                    src={summary.image_url || '/images/placeholder-image.png'}
+                    layout='fill'
+                    objectFit='cover'
+                    alt={summary.short_name}
+                />
+            </div>
 
             <Tabs defaultValue='summary' className='gap-4 w-full'>
                 <TabsList className='overflow-scroll'>
                     <TabsTrigger value='summary'>Summary</TabsTrigger>
-                    <TabsTrigger value='ergonomics'>Ergonomics</TabsTrigger>
+                    {/* <TabsTrigger value='ergonomics'>Ergonomics</TabsTrigger> */}
                     {/* <TabsTrigger value='sensor'>Sensor</TabsTrigger>
                     <TabsTrigger value='screenViewfinder'>Screen & Viewfinder</TabsTrigger> */}
                 </TabsList>
@@ -396,7 +432,7 @@ export function ModelCard({ summary, ergonomics }: CameraModel) {
                         </p>
                     </TabsContent>
 
-                    <TabsContent value='ergonomics'>
+                    {/* <TabsContent value='ergonomics'>
                         <section>
                             <p className='flex justify-between'>
                                 <span>Body Weight:</span> <span>{display(ergonomics?.weightGrams)} g</span>
@@ -418,7 +454,7 @@ export function ModelCard({ summary, ergonomics }: CameraModel) {
                                 </span>
                             </p>
                         </section>
-                    </TabsContent>
+                    </TabsContent> */}
 
                     {/* <TabsContent value='sensor'>
                         <section>
